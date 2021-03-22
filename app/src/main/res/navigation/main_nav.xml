@@ -7,7 +7,20 @@
 
     <fragment
         android:id="@+id/citiesListFragment"
-        android:name="com.example.openweathermapkotlin.ui.CitiesListFragment"
+        android:name="com.example.openweathermapkotlin.ui.citiesList.CitiesListFragment"
         android:label="fragment_cities_list"
-        tools:layout="@layout/fragment_cities_list" />
+        tools:layout="@layout/fragment_cities_list" >
+        <action
+            android:id="@+id/action_citiesListFragment_to_cityWeatherFragment"
+            app:destination="@id/cityWeatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityWeatherFragment"
+        android:name="com.example.openweathermapkotlin.ui.cityWeather.CityWeatherFragment"
+        android:label="fragment_city_weather"
+        tools:layout="@layout/fragment_city_weather">
+        <argument
+            android:name="passing_name"
+            app:argType="string" />
+    </fragment>
 </navigation>
