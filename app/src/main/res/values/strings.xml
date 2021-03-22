@@ -3,4 +3,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="choose_a_city">Choose a city:</string>
     <string name="lisbon">Lisbon</string>
+    <string name="feels_like">Feels like: %1$s°C</string>
+    <string name="temp_min">Temp-min: %1$s°C</string>
+    <string name="temp_max">Temp-max: %1$s°C</string>
+    <string name="wind_speed">Wind speed: %1$sKm/h</string>
+    <string name="weather_description">Weather description: %1$s</string>
 </resources>
